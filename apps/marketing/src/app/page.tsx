@@ -25,11 +25,11 @@ export default function Home() {
           FiscSight analyzes; you decide.
         </p>
 
-        {/* CTA */}
+        {/* CTA with brand token ring/glow */}
         <div className="mt-8">
           <a
             href="https://app.fiscplan.com"
-            className="inline-block rounded-lg bg-white px-5 py-3 font-medium text-black hover:bg-neutral-200"
+            className="inline-block rounded-lg bg-white px-5 py-3 font-medium text-black hover:bg-neutral-200 ring-1 ring-brand-gold shadow-brand-glow"
           >
             Start FiscPlan
           </a>
