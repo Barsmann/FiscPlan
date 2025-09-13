@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: "FiscPlan™ — Clarity-first structuring",
   description:
     "Guided branching questionnaire, instant insights, secure reports powered by FiscSight™.",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
