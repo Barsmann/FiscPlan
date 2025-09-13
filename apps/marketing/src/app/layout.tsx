@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import Script from "next/script";
+import "./globals.css"; // <-- this brings Tailwind in
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
@@ -35,7 +36,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // JSON-LD Organization schema for SEO
   const org = {
     "@context": "https://schema.org",
     "@type": "Organization",
