@@ -1,41 +1,25 @@
-{
-  "compilerOptions": {
-    "target": "ES2020",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
-  },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+/* apps/marketing/src/app/terms/page.tsx */
+export const metadata = {
+  title: "Terms of Service | FiscPlan",
+  description: "FiscPlan™ terms and acceptable use.",
+};
+
+export default function TermsPage() {
+  return (
+    <main className="mx-auto max-w-3xl bg-black px-6 py-16 text-white">
+      <h1 className="text-3xl font-semibold">Terms of Service</h1>
+      <p className="mt-4 text-neutral-300">
+        By using FiscPlan™, you agree to these terms. FiscPlan™ is an analysis/documentation tool
+        and does not provide legal or tax advice.
+      </p>
+      <h2 className="mt-10 text-xl font-semibold text-[#F4B000]">Acceptable use</h2>
+      <p className="mt-2 text-neutral-300">
+        No misuse, abuse, or attempts to access other users’ data.
+      </p>
+      <h2 className="mt-8 text-xl font-semibold text-[#F4B000]">Liability</h2>
+      <p className="mt-2 text-neutral-300">
+        Use at your own risk; always consult licensed professionals before acting on outputs.
+      </p>
+    </main>
+  );
 }
