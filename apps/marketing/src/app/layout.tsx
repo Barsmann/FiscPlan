@@ -5,13 +5,27 @@ import { Open_Sans } from "next/font/google";
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://fiscplan.com"),
+  alternates: { canonical: "/" },
   title: "FiscPlan™ — Clarity-first structuring",
   description:
     "Guided branching questionnaire, instant insights, secure reports powered by FiscSight™.",
-  icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+  icons: { icon: "/favicon.png", shortcut: "/favicon.png", apple: "/favicon.png" },
+  openGraph: {
+    title: "FiscPlan™ — Clarity-first structuring",
+    description:
+      "Guided branching questionnaire, instant insights, secure reports powered by FiscSight™.",
+    url: "https://fiscplan.com",
+    siteName: "FiscPlan",
+    type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "FiscPlan™" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FiscPlan™ — Clarity-first structuring",
+    description:
+      "Guided branching questionnaire, instant insights, secure reports powered by FiscSight™.",
+    images: ["/og-image.png"],
   },
 };
 
