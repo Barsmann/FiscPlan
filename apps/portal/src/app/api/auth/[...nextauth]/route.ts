@@ -1,7 +1,8 @@
-import NextAuth from "next-auth";
+// apps/portal/src/app/api/auth/[...nextauth]/route.ts
+import NextAuth from "next-auth/next";
 import Credentials from "next-auth/providers/credentials";
 
-export const authOptions = {
+const handler = NextAuth({
   providers: [
     Credentials({
       name: "Sign in",
@@ -10,6 +11,7 @@ export const authOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
+        // TEMP: any email + password === "demo"
         if (credentials?.password === "demo") {
           return {
             id: "user-1",
@@ -23,7 +25,6 @@ export const authOptions = {
   ],
   session: { strategy: "jwt" },
   pages: { signIn: "/signin" },
-} as const;
+});
 
-const handler = NextAuth(authOptions);
 export { handler as GET, handler as POST };
