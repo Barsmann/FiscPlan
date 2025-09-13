@@ -8,7 +8,7 @@ export default function Home() {
         <div className="flex items-center">
           <Image
             src="/logo-fiscplan.jpg"
-            alt="FiscPlan"
+            alt="FiscPlan™"
             width={420}
             height={126}
             priority
@@ -21,7 +21,7 @@ export default function Home() {
         </h1>
         <p className="mt-4 text-lg text-neutral-300 max-w-2xl">
           A guided, branching questionnaire that maps your scenario and delivers a secure report.
-          Powered by FiscSight. You decide the next step.
+          Powered by FiscSight™. You decide the next step.
         </p>
 
         {/* 3 value props */}
@@ -45,14 +45,15 @@ export default function Home() {
           <a
             href="https://app.fiscplan.com"
             className="inline-block rounded-lg bg-[#D4AF37] px-5 py-3 font-medium text-black hover:brightness-110 ring-2 ring-[#D4AF37] ring-offset-2 ring-offset-black shadow-[0_0_20px_rgba(212,175,55,0.35)]"
+            aria-label="Start FiscPlan™"
           >
-            Start FiscPlan
+            Start FiscPlan™
           </a>
         </div>
       </section>
 
       <footer className="border-t border-neutral-900 py-8 text-center text-neutral-500">
-        © {new Date().getFullYear()} FiscSphere Group — FiscPlan powered by FiscSight
+        © {new Date().getFullYear()} FiscSphere Group™ — FiscPlan™ powered by FiscSight™
       </footer>
     </main>
   );
