@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "fiscplan",
   "private": true,
   "workspaces": ["apps/*"]
