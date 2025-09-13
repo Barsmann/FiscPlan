@@ -1,0 +1,8 @@
+﻿export const brand = {
+  name: "FiscPlan",
+  colors: {
+    black: "#000000",
+    gold:  "#D4AF37",
+    white: "#FFFFFF"
+  }
+};
