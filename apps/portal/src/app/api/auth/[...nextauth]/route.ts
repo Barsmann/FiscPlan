@@ -1,5 +1,5 @@
 // apps/portal/src/app/api/auth/[...nextauth]/route.ts
-import NextAuth from "next-auth/next";
+import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 
 const handler = NextAuth({
@@ -11,7 +11,6 @@ const handler = NextAuth({
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        // TEMP: any email + password === "demo"
         if (credentials?.password === "demo") {
           return {
             id: "user-1",
