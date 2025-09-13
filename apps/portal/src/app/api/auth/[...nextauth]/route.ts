@@ -10,7 +10,6 @@ export const authOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        // TEMP: any email + password === "demo"
         if (credentials?.password === "demo") {
           return {
             id: "user-1",
@@ -23,9 +22,7 @@ export const authOptions = {
     }),
   ],
   session: { strategy: "jwt" },
-  pages: {
-    signIn: "/signin",
-  },
+  pages: { signIn: "/signin" },
 } as const;
 
 const handler = NextAuth(authOptions);
