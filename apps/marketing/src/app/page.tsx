@@ -24,19 +24,25 @@ export default function Home() {
           Powered by FiscSight™. You decide the next step.
         </p>
 
-        {/* 3 value props */}
+        {/* 3 value props — headings in gold */}
         <div className="mt-10 grid gap-6 sm:grid-cols-3">
           <div className="rounded-xl border border-neutral-800 p-5">
-            <h3 className="text-lg font-medium">Smart branching</h3>
-            <p className="mt-2 text-neutral-400">Questions adapt to your profile in minutes.</p>
+            <h3 className="text-lg font-medium text-[#D4AF37]">Smart branching</h3>
+            <p className="mt-2 text-neutral-400">
+              Questions adapt to your profile in minutes.
+            </p>
           </div>
           <div className="rounded-xl border border-neutral-800 p-5">
-            <h3 className="text-lg font-medium">Instant Lite report</h3>
-            <p className="mt-2 text-neutral-400">Structure sketch, pros/cons, reporting flags.</p>
+            <h3 className="text-lg font-medium text-[#D4AF37]">Instant Lite report</h3>
+            <p className="mt-2 text-neutral-400">
+              Structure sketch, pros/cons, reporting flags.
+            </p>
           </div>
           <div className="rounded-xl border border-neutral-800 p-5">
-            <h3 className="text-lg font-medium">Upgrade path</h3>
-            <p className="mt-2 text-neutral-400">Advanced & Pro reports with deeper analysis.</p>
+            <h3 className="text-lg font-medium text-[#D4AF37]">Upgrade path</h3>
+            <p className="mt-2 text-neutral-400">
+              Advanced &amp; Pro reports with deeper analysis.
+            </p>
           </div>
         </div>
 
