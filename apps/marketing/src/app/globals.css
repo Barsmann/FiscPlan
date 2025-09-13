@@ -3,9 +3,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Dark brand defaults */
-:root { color-scheme: dark; }
+/* Brand base */
+:root { --brand-gold: #F4B000; color-scheme: dark; }
 html, body { @apply bg-black text-white; }
 
-/* Brand link color */
-a { @apply text-[#F4B000]; }
+@layer utilities {
+  .text-brand { color: var(--brand-gold); }
+  .shadow-brand { box-shadow: 0 10px 35px rgba(244, 176, 0, 0.25); }
+}
+
+@layer components {
+  .btn-brand {
+    @apply inline-block rounded-lg bg-white px-5 py-3 font-medium text-black
+           ring-1 ring-black/10 transition hover:bg-neutral-200;
+  }
+  .btn-ghost {
+    @apply inline-block rounded-lg border border-neutral-700 px-5 py-3
+           text-neutral-200 transition hover:border-neutral-500;
+  }
+}
+
+/* Link color subtly branded */
+a { color: var(--brand-gold); }
