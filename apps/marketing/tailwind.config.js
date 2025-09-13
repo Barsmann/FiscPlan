@@ -1,8 +1,7 @@
-import type { Config } from "tailwindcss";
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/** @type {import('tailwindcss').Config} */
 const uiPreset = require("../../packages/ui/tailwind-preset.cjs");
 
-const config: Config = {
+module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "../../packages/ui/**/*.{js,ts,jsx,tsx}",
@@ -11,4 +10,3 @@ const config: Config = {
   theme: { extend: {} },
   plugins: [],
 };
-export default config;
