@@ -20,8 +20,9 @@ export default function PortalHome() {
         </p>
 
         <div className="mt-8">
+          {/* Solid gold button (uses hex so it always renders) */}
           <button
-            className="rounded-lg bg-transparent px-5 py-3 font-medium text-white ring-2 ring-brand-gold ring-offset-2 ring-offset-black shadow-brand-glow"
+            className="rounded-lg bg-[#D4AF37] px-5 py-3 font-medium text-black hover:brightness-110 ring-2 ring-[#D4AF37] ring-offset-2 ring-offset-black shadow-[0_0_20px_rgba(212,175,55,0.35)]"
             disabled
             title="Coming soon"
           >
