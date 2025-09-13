@@ -1,21 +1,26 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
       <section className="mx-auto max-w-5xl px-6 py-20">
-        {/* Brand logo */}
-        <div className="flex items-center">
-          <Image
+        <div
+          style={{
+            border: "2px dashed #D4AF37",
+            padding: "12px",
+            background: "#111"
+          }}
+        >
+          <p style={{ color: "#D4AF37", marginBottom: 8 }}>
+            DEBUG: This box should appear. Logo below:
+          </p>
+          <img
             src="/logo-fiscplan.jpg"
             alt="FiscPlan"
-            width={320}
-            height={96}
-            priority
+            width={420}
+            height={126}
+            style={{ display: "block", background: "#000" }}
           />
         </div>
 
-        {/* Headline + subcopy */}
         <h1 className="mt-8 text-5xl font-semibold tracking-tight">
           Financial structuring that starts with clarity.
         </h1>
@@ -24,7 +29,6 @@ export default function Home() {
           FiscSight analyzes; you decide.
         </p>
 
-        {/* CTA */}
         <div className="mt-8">
           <a
             href="https://app.fiscplan.com"
